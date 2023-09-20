@@ -1,5 +1,5 @@
 # ufo_sightings
-Tool to Explore Global UFO Sightings from 1964 - 2013
+Interactive Tool to Explore Global UFO Sightings from 1964 - 2013
 
 <video width="630" height="300" src="demo_ufo_sightings_explore.mp4"></video>
 
