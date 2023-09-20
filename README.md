@@ -1,14 +1,9 @@
 # ufo_sightings
 Interactive Tool to Explore Global UFO Sightings from 1964 - 2013
 
+## Demo
+Click the image below for a tool demo
 [<img src="ufo_tool.jpg" />](https://youtu.be/S_wnWGrprMg)
-
-
-
-<figure>
-    [<img src="ufo_tool.jpg" />](https://youtu.be/S_wnWGrprMg)
-    <figcaption></figcaption>
-</figure>
 
 ## Introduction
 This project is to clean, analyse, and present findings on UFO Sightings around the world.
