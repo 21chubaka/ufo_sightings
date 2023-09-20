@@ -1,6 +1,10 @@
 # ufo_sightings
 Analysis of Global UFO Sightings
 
+[<img src="demo_ufo_sightings_explore.mp4" width="600" height="300"
+/>]
+
+
 <figure>
     <img src='ufo_tool.jpg'>
     <figcaption></figcaption>
