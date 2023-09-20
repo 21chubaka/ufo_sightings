@@ -1,7 +1,7 @@
 # ufo_sightings
 Interactive Tool to Explore Global UFO Sightings from 1964 - 2013
 
-[<img src="https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg" width="600" height="300"
+[<img src="ufo_tool.jpg" width="600" height="300"
 />](https://youtu.be/S_wnWGrprMg)
 
 
