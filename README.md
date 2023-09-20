@@ -1,8 +1,7 @@
 # ufo_sightings
 Analysis of Global UFO Sightings
 
-[<img src="demo_ufo_sightings_explore.mp4" width="600" height="300"
-/>]
+<video width="630" height="300" src="demo_ufo_sightings_explore.mp4"></video>
 
 
 <figure>
