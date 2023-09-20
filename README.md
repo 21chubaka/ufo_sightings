@@ -62,7 +62,8 @@ out the data.
 The overall goal for this tool is to enable the user to explore the relationship 
 between the number of UFO sightings (excluding U.S.), the UFO shapes observed, the years 
 they were sighted, and the country/state/geo-location of the sightings.
-Transformations: The main transformation I used for this tool was to limit the data to show 
+### Transformations: 
+The main transformation I used for this tool was to limit the data to show 
 UFO sightings from 1964 to 2013. The choice of 1964 was made due to their being 
 significantly lower number of sightings before that year. I decided to exclude 2014 as it was 
 only data for half that year.
