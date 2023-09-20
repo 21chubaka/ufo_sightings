@@ -17,7 +17,8 @@ dataset had information about UFO sightings from 1906 to 2014. The features incl
 - Description of Encounter
 - Date Documented
 - Latitude
-- Longitude.<br>
+- Longitude<br>
+
 Using Python/Jupyter Notebook I cleaned and carried out some data manipulation creating 
 a new dataset.
 
