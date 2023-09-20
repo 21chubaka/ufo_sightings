@@ -1,0 +1,180 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UFO Sightings Explorer (1964 - 2013) excluding U.S.",
+    "fontSize": 20,
+    "fontWeight": "bold",
+    "orient": "top",
+    "anchor": "middle"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/21chubaka/ufo_sightings/main/cleaned_ufo_sightings_non_us_v3.csv",
+    "format": {"type": "csv"}
+  },
+  "concat": [
+    {
+      "vconcat": [
+        {
+          "width": 680,
+          "height": 600,
+          "projection": {"type": "equalEarth"},
+          "layer": [
+            {
+              "data": {
+                "url": "data/world-110m.json",
+                "format": {"type": "topojson", "feature": "countries"}
+              },
+              "mark": {
+                "type": "geoshape",
+                "fill": "#e4f0e1",
+                "stroke": "#262625"
+              }
+            },
+            {
+              "data": {
+                "url": "https://raw.githubusercontent.com/21chubaka/ufo_sightings/main/cleaned_ufo_sightings_non_us_v3.csv",
+                "format": {"type": "csv"}
+              },
+              "transform": [
+                {"filter": "datum.year > 1963"},
+                {"filter": "datum.year < 2014"},
+                {"filter": {"param": "vert_pt"}},
+                {"filter": {"param": "hor_int"}}
+              ],
+              "mark": {"type": "circle", "tooltip": true},
+              "params": [
+                {"name": "scat_int", "select": {"type": "interval"}},
+                {
+                  "name": "ufo_lgd",
+                  "select": {"type": "point", "fields": ["ufo_shape"]},
+                  "bind": "legend"
+                }
+              ],
+              "encoding": {
+                "longitude": {"field": "longitude", "type": "quantitative"},
+                "latitude": {"field": "latitude", "type": "quantitative"},
+                "color": {
+                  "condition": {
+                    "param": "scat_int",
+                    "field": "ufo_shape",
+                    "type": "nominal",
+                    "scale": {"scheme": "tableau10"}
+                  },
+                  "value": "lightgrey"
+                },
+                "opacity": {
+                  "condition": {"param": "ufo_lgd", "value": 1},
+                  "value": 0
+                },
+                "tooltip": [
+                  {
+                    "field": "encounter_length",
+                    "type": "quantitative",
+                    "title": "Encounter Length (sec)"
+                  },
+                  {"field": "city_area", "type": "nominal", "title": "City"},
+                  {"field": "country_nm", "type": "nominal", "title": "Country"}
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "transform": [
+            {"filter": "datum.year > 1963"},
+            {"filter": "datum.year < 2014"},
+            {"filter": {"param": "vert_pt"}},
+            {"filter": {"param": "scat_int"}},
+            {"filter": {"param": "ufo_lgd"}}
+          ],
+          "mark": "bar",
+          "width": 700,
+          "height": 200,
+          "params": [
+            {
+              "name": "hor_int",
+              "select": {"type": "interval", "encodings": ["x"]}
+            }
+          ],
+          "encoding": {
+            "y": {
+              "aggregate": "count",
+              "title": "# Sightings",
+              "type": "quantitative"
+            },
+            "x": {"field": "year", "type": "ordinal", "title": "Year"},
+            "color": {
+              "condition": {
+                "param": "hor_int",
+                "field": "ufo_shape",
+                "type": "nominal",
+                "scale": {"scheme": "tableau10"}
+              },
+              "value": "lightgrey"
+            },
+            "tooltip": [
+              {"field": "ufo_shape", "title": "UFO Shape"},
+              {
+                "aggregate": "count",
+                "field": "country",
+                "title": "# Sightings (actual)",
+                "type": "quantitative"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {"filter": "datum.year > 1963"},
+        {"filter": "datum.year < 2014"},
+        {"filter": {"param": "hor_int"}},
+        {"filter": {"param": "scat_int"}},
+        {"filter": {"param": "ufo_lgd"}}
+      ],
+      "mark": "bar",
+      "width": 200,
+      "height": 825,
+      "params": [
+        {
+          "name": "vert_pt",
+          "select": {"type": "point", "fields": ["country_nm"]}
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "country_nm",
+          "type": "ordinal",
+          "axis": {"title": null},
+          "sort": "-x"
+        },
+        "x": {
+          "aggregate": "count",
+          "title": "# Sightings (log)",
+          "type": "quantitative",
+          "scale": {"type": "log"}
+        },
+        "color": {
+          "condition": {
+            "param": "vert_pt",
+            "field": "ufo_shape",
+            "type": "nominal",
+            "scale": {"scheme": "tableau10"}
+          },
+          "value": "lightgrey"
+        },
+        "tooltip": [
+          {"field": "ufo_shape", "title": "UFO Shape"},
+          {
+            "aggregate": "count",
+            "field": "country",
+            "title": "# Sightings (actual)",
+            "type": "quantitative"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
