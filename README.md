@@ -2,13 +2,13 @@
 ## Interactive Vega-Lite Dashboard to Explore Global UFO Sightings from 1964 - 2013
 
 <figure>
-    <img src='truth_out.jpg' width='600' height='400'>
+    <img src='media/truth_out.jpg' width='600' height='400'>
     <figcaption>The Truth is Out There Image: https://bananaroad.com/products/ufo-the-truth-is-out-there-x-files-poster-24x36</figcaption>
 </figure>
 
 ## Demo
 Click the image below for a tool demo
-[<img src="ufo_tool.jpg" />](https://youtu.be/S_wnWGrprMg)
+[<img src="media/ufo_tool.jpg" />](https://youtu.be/S_wnWGrprMg)
 
 ## Introduction
 This project is to clean, analyse, and present a dashboard of UFO Sightings around the world. This tool allows the user to explore the relationship between the number of UFO sightings (excluding U.S.), the UFO shapes observed, the years they were sighted, and the country/state/geo-location of the sightings in an interactive way. Users can drill-down a particular range of years, and/or region of the map, and/or country, and/or shape through iterative selections in this easy-to-use dashboard that facilitates exploration.
@@ -29,7 +29,7 @@ dataset had information about UFO sightings from 1906 to 2014. The features incl
 - Longitude<br>
 
 Using Python/Jupyter Notebook I cleaned and carried out some data manipulation creating 
-a new [dataset](https://raw.githubusercontent.com/21chubaka/ufo_sightings/main/cleaned_ufo_sightings_non_us_v2.csv).
+a new [dataset](https://raw.githubusercontent.com/21chubaka/ufo_sightings/main/cleaned_ufo_sightings_non_us_v3.csv).
 
 ## Data Manipulation
 ### Retrieved Countries that were null:
