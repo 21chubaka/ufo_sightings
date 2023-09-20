@@ -101,3 +101,11 @@ data on any of the charts and the rest of the charts will automatically filter. 
 scatter plot uses an interval select brush to filter the user’s choice of UFO sightings. The 
 vertical stacked bar chart uses a point select to filter by country(s) and the horizontal 
 stacked bar chart uses an interval select brush to filter the user’s choice of year(s)
+
+## Future Work
+### Data
+- Obtain more recent data from 2014 onwards
+- Hopefully, make the data fed to the tool dynamic
+### Design
+- Create more drill-down interactions with the world map for users
+- Introducte zoom capabilities to the map
