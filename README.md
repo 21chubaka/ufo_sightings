@@ -50,14 +50,16 @@ keep. This was especially true as the number of sightings by country I used log 
 out the data.
 
 ## Design Considerations
-Overall goal: The overall goal for this tool is to enable the user to explore the relationship 
+### Overall goal: 
+The overall goal for this tool is to enable the user to explore the relationship 
 between the number of UFO sightings (excluding U.S.), the UFO shapes observed, the years 
 they were sighted, and the country/state/geo-location of the sightings.
 Transformations: The main transformation I used for this tool was to limit the data to show 
 UFO sightings from 1964 to 2013. The choice of 1964 was made due to their being 
 significantly lower number of sightings before that year. I decided to exclude 2014 as it was 
 only data for half that year.
-World Map with Scatter Plot: This is a scatter plot of the location of UFO sightings on the 
+### World Map with Scatter Plot: 
+This is a scatter plot of the location of UFO sightings on the 
 world map. The colour of each point in the scatter plot represents the UFO shape observed.
 The tooltip shows more details of each point’s city, country, and encounter length in 
 seconds. Even though I excluded the U.S. based on the Country feature, some of the 
@@ -69,7 +71,8 @@ points could be coloured by another feature – I chose UFO shape.
 Initially, I considered making the size of the marks correspond to the encounter length. 
 However, it already suffers from a bit of overplotting, and increasing the size of some dots 
 would exacerbate the problem.
-Vertical Stacked Bar Chart: This stacked bar chart shows the log of the number of sightings 
+### Vertical Stacked Bar Chart: 
+This stacked bar chart shows the log of the number of sightings 
 by each country. The log of number of sightings was chosen to smooth the chart out, as the 
 countries with the most sightings made the chart unreadable. The colours are the UFO 
 shapes coinciding with the UFO shape legend. The colours are not able to represent the
@@ -79,7 +82,7 @@ is sorted by number of sightings. The user can get a great reference of the coun
 the most sightings and their ranking compared to each country represented. The tooltip 
 shows the shape and actual count of sightings as opposed to the log of count of sightings for 
 each country.
-## Horizontal Stacked Bar Chart: 
+### Horizontal Stacked Bar Chart: 
 This stacked bar chart shows the number of sightings by each 
 year across 50 years from 1964 to 2013. The colours are the UFO shapes coinciding with the 
 UFO shape legend. I initially was going to have years showed vertically, but since it is a time 
