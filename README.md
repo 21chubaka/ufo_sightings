@@ -5,7 +5,7 @@ Analysis of Global UFO Sightings
 This project is to clean, analyse, and present findings on UFO Sightings around the world.
 
 ## Data
-The initial dataset was UFO Sightings from the 2019 Tidy Tuesday Collection. The original
+The initial dataset was UFO Sightings from the [2019 Tidy Tuesday Collection](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-25/ufo_sightings.csv). The original
 dataset had information about UFO sightings from 1906 to 2014. The features included: 
 - Datetime
 - City Area
@@ -20,5 +20,5 @@ dataset had information about UFO sightings from 1906 to 2014. The features incl
 - Longitude<br>
 
 Using Python/Jupyter Notebook I cleaned and carried out some data manipulation creating 
-a new dataset.
+a new [dataset](https://raw.githubusercontent.com/21chubaka/ufo_sightings/main/cleaned_ufo_sightings_non_us_v2.csv).
 
