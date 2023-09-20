@@ -1,5 +1,5 @@
 # ufo_sightings
-Analysis of Worldwide UFO Sightings Data
+Analysis of Global UFO Sightings
 
 ## Introduction
 This project is to clean, analyse, and present findings on UFO Sightings around the world.
