@@ -11,6 +11,8 @@ Analysis of Global UFO Sightings
 
 ## Introduction
 This project is to clean, analyse, and present findings on UFO Sightings around the world.
+This tool is to allows the user to explore the relationship between the number of UFO sightings (excluding U.S.), 
+the UFO shapes observed, the years they were sighted, and the country/state/geo-location of the sightings.
 
 ## Data
 The initial dataset was UFO Sightings from the [2019 Tidy Tuesday Collection](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-25/ufo_sightings.csv). The original
