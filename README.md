@@ -109,3 +109,8 @@ stacked bar chart uses an interval select brush to filter the user’s choice of
 ### Design
 - Create more drill-down interactions with the world map for users
 - Introducte zoom capabilities to the map
+
+## References
+- Robert Stack voiceover: https://fakeyou.com
+- The X-Files Theme: https://www.youtube.com/watch?v=Qz2wnSVeITg
+- The Truth is Out There Image: https://bananaroad.com/products/ufo-the-truth-is-out-there-x-files-poster-24x36
