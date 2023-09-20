@@ -1,5 +1,5 @@
 # ufo_sightings
-Interactive Tool to Explore Global UFO Sightings from 1964 - 2013
+Interactive Vega-Lite Dashboard to Explore Global UFO Sightings from 1964 - 2013
 
 ## Demo
 Click the image below for a tool demo
