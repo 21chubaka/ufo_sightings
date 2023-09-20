@@ -1,5 +1,5 @@
 # ufo_sightings
-Interactive Vega-Lite Dashboard to Explore Global UFO Sightings from 1964 - 2013
+## Interactive Vega-Lite Dashboard to Explore Global UFO Sightings from 1964 - 2013
 
 <figure>
     <img src='truth_out.jpg' width='600' height='400'>
