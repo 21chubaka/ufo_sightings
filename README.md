@@ -7,7 +7,7 @@ Click the image below for a tool demo
 
 ## Introduction
 This project is to clean, analyse, and present findings on UFO Sightings around the world.
-This tool is to allows the user to explore the relationship between the number of UFO sightings (excluding U.S.), 
+This tool allows the user to explore the relationship between the number of UFO sightings (excluding U.S.), 
 the UFO shapes observed, the years they were sighted, and the country/state/geo-location of the sightings.
 
 ## Data
