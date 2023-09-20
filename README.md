@@ -7,7 +7,7 @@ Interactive Tool to Explore Global UFO Sightings from 1964 - 2013
 
 
 <figure>
-    <img src='ufo_tool.jpg'>(https://youtu.be/S_wnWGrprMg)
+    [<img src='ufo_tool.jpg'>](https://youtu.be/S_wnWGrprMg)
     <figcaption></figcaption>
 </figure>
 
