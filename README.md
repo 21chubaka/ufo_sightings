@@ -6,9 +6,7 @@ Click the image below for a tool demo
 [<img src="ufo_tool.jpg" />](https://youtu.be/S_wnWGrprMg)
 
 ## Introduction
-This project is to clean, analyse, and present findings on UFO Sightings around the world.
-This tool allows the user to explore the relationship between the number of UFO sightings (excluding U.S.), 
-the UFO shapes observed, the years they were sighted, and the country/state/geo-location of the sightings.
+This project is to clean, analyse, and present a dashboard of UFO Sightings around the world. This tool allows the user to explore the relationship between the number of UFO sightings (excluding U.S.), the UFO shapes observed, the years they were sighted, and the country/state/geo-location of the sightings in an interactive way. Users can drill-down a particular range of years, and/or region of the map, and/or country, and/or shape through iterative selections in this easy-to-use dashboard that facilitates exploration.
 
 ## Data
 The initial dataset was UFO Sightings from the [2019 Tidy Tuesday Collection](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-25/ufo_sightings.csv). The original
