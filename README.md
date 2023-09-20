@@ -2,7 +2,7 @@
 Interactive Vega-Lite Dashboard to Explore Global UFO Sightings from 1964 - 2013
 
 <figure>
-    <img src='truth_out.jpg' width='200' height='400'>
+    <img src='truth_out.jpg' width='600' height='400'>
     <figcaption>The Truth is Out There Image: https://bananaroad.com/products/ufo-the-truth-is-out-there-x-files-poster-24x36</figcaption>
 </figure>
 
